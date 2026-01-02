@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>youtube-live<title>
-        <link rel="stylesheet" href="/styles/main-output.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>youtube-live</title>
+              <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@600&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="main.css" />
+
 </head>
 <body>
     <main class="page">
         <header class=" header">
-            <div class="header-lefth">
-                <h1>youtube.com</h1>
+            <div class="header-left">
+                <h1 class="logo">youtube.com</h1>
             </div>
             <div class="header-right">
                 <input type="text"
-                id="searchimput"
-                class="search-imput"
+                id="searchinput"
+                class="search-input"
                 placeholder="Search live stream"/>
             </div>
         </header>
@@ -45,25 +46,52 @@
                 <input id="title" name="title" type="text" required />
                 </div>
                 
-                <div class="form-now">
+                <div class="form-row">
                     <label for="channel">Channel name</label>
                     <input id="channel" name="channel" type="text" required />
                 </div>
 
                 <div class="form-row">
                     <label for="category"> Category</label>
-                    <section id="category" name="category" required >
+                    <select id="category" name="category" required >
                         <option value="Music">Music</option>
                         <option value="Gaming">Gaming</option>
                         <option value="Study">Study</option>
                         <option value="Tech">Tech</option>
-                    </section>
+                    </select>
                 </div>
 
-                <div class=""></div>
+                <div class="form-row">
+                    <label for="thumbnail">Thumbnail URL (optional)</label>
+                    <input 
+                    id="thumbnail"
+                    name="thumbnail"
+                    type="url"
+                    placeholder="https://example.com/image.jpg" />
+                </div>
+
+                <div class="form-row">
+                    <label for="viewers">Viewers</label>
+                    <input id="viewers"
+                    name="viewers"
+                    type="number"
+                    min="0"
+                    step="1"
+                    value="0"
+                    />
+                </div>
+
+                <div class="form-row checkbox-row">
+                    <label>
+                        <input id="isLive" name="isLive" type="checkbox" checked />
+                        Currently live
+                    </label>
+                </div>
+
+                <button type="submit" class="primary-btn"> Add stream</button>
             </form>
         </section>
-
     </main>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
