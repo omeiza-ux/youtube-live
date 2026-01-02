@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube-live<title>
+        <link rel="stylesheet" href="/styles/main-output.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <main class="page">
+        <header class=" header">
+            <div class="header-lefth">
+                <h1>youtube.com</h1>
+            </div>
+            <div class="header-right">
+                <input type="text"
+                id="searchimput"
+                class="search-imput"
+                placeholder="Search live stream"/>
+            </div>
+        </header>
+
+        <section class="filters">
+            <button class="filter-btn is-active" data-category="All">All</button>
+            <button class="filter-btn" data-category="Music">Music</button>
+            <button class="filter-btn" data-category="Gaming">Gaming</button>
+            <button class="filter-btn" data-category="Study">Study</button>
+            <button class="filter-btn" data-category="Tech">Tech</button>
+        </section>
+        <section class="streams-section">
+        <h2 class="section-title">Live now</h2>
+        <div id="streamsGrid" class="streams-grid"></div>
+        </section>
+
+        <section class="form-section">
+            <h2 class="section-title">Schedule / Add a stream</h2>
+            <form id="addStreamForm" class="stream-form">
+                <div class="form-row">
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text" required />
+                </div>
+                
+                <div class="form-now">
+                    <label for="channel">Channel name</label>
+                    <input id="channel" name="channel" type="text" required />
+                </div>
+
+                <div class="form-row">
+                    <label for="category"> Category</label>
+                    <section id="category" name="category" required >
+                        <option value="Music">Music</option>
+                        <option value="Gaming">Gaming</option>
+                        <option value="Study">Study</option>
+                        <option value="Tech">Tech</option>
+                    </section>
+                </div>
+
+                <div class=""></div>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
