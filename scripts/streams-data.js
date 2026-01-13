@@ -1,0 +1,33 @@
+export const streams = [
+  {
+    title: 'Late-night coding with Omeiza',
+    channel: 'Omeiza Dev',
+    category: 'Study',
+    viewers: 128,
+    thumbnail: 'https://via.placeholder.com/320x180?text=Study+Stream',
+    isLive: true,
+  },
+  {title: 'Afrobeats live DJ set',
+    channel: 'Naija Sounds',
+    category: 'Music',
+    viewers: 540,
+    thumbnail: 'https://via.placeholder.com/320x180?text=Music+Stream',
+    isLive: true,
+  },
+  {
+    title: 'Rank push in Apex Legends',
+    channel: 'ProGamer NG',
+    category: 'Gaming',
+    viewers: 320,
+    thumbnail: 'https://via.placeholder.com/320x180?text=Gaming+Stream',
+    isLive: true,
+  },
+  {
+    title: 'JavaScript functions deep dive',
+    channel: 'CodeClassroom',
+    category: 'Tech',
+    viewers: 210,
+    thumbnail: 'https://via.placeholder.com/320x180?text=Tech+Stream',
+    isLive: false,
+  },
+];
